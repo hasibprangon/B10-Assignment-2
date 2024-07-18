@@ -15,17 +15,9 @@
 .playwrite-cu-font {
     font-family: "Playwrite CU", cursive;
     font-optical-sizing: auto;
-    /* font-weight: <weight>; */
     font-style: normal;
 }
 
-
-
-
-/* * {
-    background-color: black;
-    margin: 0;
-} */
 body {
     background-color: rgb(0, 0, 0);
 }
@@ -51,7 +43,6 @@ body {
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0.1) 100%);
     width: 100%;
     margin: 2rem auto;
-    /* background-color: aqua; */
 }
 
 .headerBody {
@@ -137,23 +128,3 @@ body {
     padding: 1rem 2.5rem 1rem 2.5rem;
 }
 
-/* .bannerImgAndCard {
-    border: 1px solid white;
-    display: flex;
-
-    flex-direction: row-reverse;
-} */
-
-/* .badge-1 {
-    width: 12.1rem;
-    height: 6.125rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 45px 42px;
-    font-size: 1.5rem; 
-    font-weight: 500;
-    margin-left: -100px;
-    margin-top: -500px;
-    margin-bottom: -200px;
-} */
