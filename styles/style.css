@@ -57,6 +57,7 @@ body {
 .navConteiner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 
 }
@@ -85,6 +86,16 @@ body {
 .navLink {
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+
+/* .navBtn{
+    display: flex;
+    flex-direction: row;
+} */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
 }
 
 #home {
@@ -130,46 +141,86 @@ body {
 
 
 /* habit section */
-.habit{
+.habit {
     width: 70%;
     margin: 0 auto;
 }
 
-.habitTitle{
-    margin: 0px;
+.habitTitle {
+    margin: 0;
     font-size: 3rem;
     font-weight: 900;
     color: rgb(255, 255, 255);
     text-align: center;
 }
-.habitDescription{
-    margin-top: 14px;
+
+.habitDescription {
+    /* margin-top: 14px; */
     font-size: .875rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
 }
 
-.habitContent{
+.habitContent {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-top: 50px;
 }
-.habitItem{
+
+.habitItem {
     text-align: center;
 }
-.contentImg{
+
+.contentImg {
     border-radius: 50%;
 }
-.contentTitle{
+
+.contentTitle {
     font-size: 1.125rem;
     font-weight: 600;
     color: rgb(255, 255, 255);
 }
-.contentDescription{
+
+.contentDescription {
     font-size: .875rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/* mobile device responsive style */
+@media screen and (max-width:576px) {
+    .bannerTitle {
+        font-size: 2.25rem;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .bannerContainer {
+        flex-direction: column;
+    }
+
+    .navBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .habitTitle {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .habitContent {
+        flex-direction: column;
+    }
 }
