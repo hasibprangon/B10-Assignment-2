@@ -259,4 +259,15 @@ body {
     .habitContent {
         flex-direction: column;
     }
+    .extraMileElements{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .extraMileContent {
+        width: 15rem;
+    }
+    .e-M-img {
+        width: 15rem;
+        height: 12rem;
+    }
 }
