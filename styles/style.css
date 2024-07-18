@@ -88,10 +88,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-/* .navBtn{
-    display: flex;
-    flex-direction: row;
-} */
+
 .hamburger {
     display: none;
     font-size: 24px;
@@ -190,6 +187,45 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* Extra Mile Section */
+
+.extraMile {
+    width: 70%;
+    margin: 4rem auto;
+    padding: 1.875rem;
+    border-radius: 1.125rem;
+    background-color: rgb(34, 34, 34);
+}
+
+.extraMileElements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.extraMileContent {
+    width: 27.688rem;
+}
+
+.e-M-Title {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+.e-M-Description {
+    font-size: .875rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.e-M-img {
+    width: 22.875rem;
+    height: 19.5rem;
+    border-radius: 1.125rem;
+}
 
 
 /* mobile device responsive style */
