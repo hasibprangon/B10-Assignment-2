@@ -227,6 +227,60 @@ body {
     border-radius: 1.125rem;
 }
 
+/* Meet our team */
+.teamTitle {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.teamDescription {
+    font-size: .875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-bottom: 3.625rem;
+}
+
+.teamContainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    border-radius: 1.125rem;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.imageContainer img {
+    width: 20.42rem;
+    height: 17rem;
+    border-radius: 1.125rem;
+    /* margin-left: 20px; */
+}
+
+.textOnImg {
+    position: absolute;
+    margin-left: 20px;
+    bottom: 0;
+    left: 0;
+}
+
+.name {
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.position {
+    color: rgba(255, 255, 255, 0.5);
+}
 
 /* mobile device responsive style */
 @media screen and (max-width:576px) {
@@ -259,15 +313,37 @@ body {
     .habitContent {
         flex-direction: column;
     }
-    .extraMileElements{
+
+    .extraMileElements {
         flex-direction: column;
         gap: 2rem;
     }
+
     .extraMileContent {
         width: 15rem;
     }
+
     .e-M-img {
         width: 15rem;
         height: 12rem;
+    }
+
+    .teamContainer {
+        grid-template-columns: repeat(1, 1fr);
+        /* margin-right: .8rem; */
+        justify-content: center;
+        align-items: center;
+    }
+    .imageContainer img {
+        width: 20.42rem;
+        height: 17rem;
+        border-radius: 1.125rem;
+        margin-left: 1.25rem;
+    }
+    .textOnImg {
+        position: absolute;
+        margin-left: 1.875rem;
+        bottom: 0;
+        left: 0;
     }
 }
