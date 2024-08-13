@@ -37,6 +37,15 @@ body {
     color: rgb(255, 255, 255);
 }
 
+.footerContentColor {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.getStarted {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 /* Header Section */
 
 .headerContainer {
@@ -282,6 +291,66 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
+/* footer Section */
+.footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 27rem;
+}
+
+.footerContainer {
+    margin-top: 6.75rem;
+}
+
+.footerTitle {
+    color: rgb(230, 83, 60);
+    margin: 0;
+    font-size: 4.375rem;
+    font-weight: 800;
+}
+
+.footerDescription {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.footerContent {
+    color: white;
+    width: 66.1875rem;
+    height: 15.5625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footerContent li {
+    list-style: none;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.footer-li {
+    margin-right: 2rem;
+    padding-left: 0;
+}
+
+hr {
+    margin: 5rem 8rem 3rem;
+    /* color: rgba(255, 255, 255, 0.1); */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.rights {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.firstContent {
+    width: 27.6875rem;
+}
+
 /* mobile device responsive style */
 @media screen and (max-width:576px) {
     .bannerTitle {
@@ -334,16 +403,78 @@ body {
         justify-content: center;
         align-items: center;
     }
+
     .imageContainer img {
         width: 20.42rem;
         height: 17rem;
         border-radius: 1.125rem;
         margin-left: 1.25rem;
     }
+
     .textOnImg {
         position: absolute;
         margin-left: 1.875rem;
         bottom: 0;
         left: 0;
+    }
+
+    /* footer section */
+    .footer {
+        background: rgba(255, 255, 255, 0.1);
+        margin-top: 2rem;
+        padding: 2rem 1rem;
+        height: auto;
+    }
+
+    .footerContent {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        text-align:start;
+    }
+
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        margin-top: 3rem;
+        width: 100%;
+        padding: 0 1rem;
+        text-align: start;
+    }
+
+    .footerTitle {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .footerDescription {
+        font-size: 0.875rem;
+        text-align: left;
+        width: 19.8125rem;
+    }
+
+    .getStarted {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .footer-li {
+        margin: 1rem 0;
+    }
+
+    .rights {
+        font-size: 1rem;
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    hr {
+        margin: 1rem 0;
+        width: 80%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: block;
     }
 }
