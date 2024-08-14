@@ -94,11 +94,67 @@
         </section>
 
         <!-- BMI section -->
-         
+        <section>
+            <div class="bmi">
+                <h1 class="bmiTitle">BMI Calculator</h1>
+                <p class="bmiDescription">
+                    We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a
+                    gym.
+                </p>
+            </div>
+            <div class="bmiContent">
+                <!-- BMI Calculator Chart -->
+                <div class="chartContainer">
+                    <h2 class="chartTitle">BMI Calculator Chart</h2>
+                    <table>
+                        <tr>
+                            <th>BMI</th>
+                            <th>Weight Status</th>
+                        </tr>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
+                </div>
 
+                <!-- Calculate your BMI -->
+                <div class="calcContainer">
+                    <h2 class="bmiCalcTitle">Calculate your BMI</h2>
+                    <p class="bmiCalcDescription">We believe fitness should be accessible to everyone, everywhere, regardless of income or access
+                        to a gym.</p>
+                    <form class="inpContainer">
+                        <input type="text" class="inp-1" value="Height/cm" placeholder="Height/cm">
+                        <input type="text" class="inp-2" value="Weight/kg" placeholder="Weight/kg">
+                        <input type="text" class="inp-3" value="Age" placeholder="Age">
+                        <select class="inp-4" name="sex">
+                            <option value="" disabled selected>Sex</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <select id="activity" name="activity" class="inp-5">
+                            <option value="" disabled selected>Select an activity factor</option>
+                        </select>
+                    </form>
+                    <button class="btnPrimary btnCalc">Calculate</button>
+                </div>
+            </div>
+        </section>
 
         <!-- Meet our team section -->
-        <section>
+        <section class="teamSection">
             <h1 class="teamTitle">Meet Our Team</h1>
             <p class="teamDescription">Meet our team of dedicated professionals committed to delivering excellence and
                 outstanding service</p>

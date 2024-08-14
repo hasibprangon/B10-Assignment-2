@@ -236,7 +236,166 @@ body {
     border-radius: 1.125rem;
 }
 
+/* BMI section */
+.bmi {
+    margin: 5rem 20rem;
+}
+
+.bmiTitle {
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+}
+
+.bmiDescription {
+    font-size: .875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+.bmiContent {
+    background: rgb(34, 34, 34);
+    width: 100%;
+    height: 30.4375rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.chartContainer {
+    width: 28rem;
+    height: 24rem;
+}
+
+.chartTitle {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+table {
+    border-collapse: collapse;
+    width: 20rem;
+    height: 14rem;
+}
+
+th {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+td {
+    font-size: .875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+td,
+th {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    padding: 8px;
+}
+
+.calcContainer {
+    width: 36rem;
+    height: 24rem;
+}
+
+.bmiCalcTitle {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+.bmiCalcDescription {
+    font-size: .875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.inp-1 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 12px 40px 12px 20px;
+    grid-area: inp-1;
+    border: none;
+    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.inp-2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 12px 40px 12px 20px;
+    grid-area: inp-2;
+    border: none;
+    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.inp-3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 12px 40px 12px 20px;
+    border: none;
+    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    grid-area: inp-3;
+}
+
+.inp-4 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 12px 20px 12px 20px;
+    border: none;
+    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    grid-area: inp-4;
+}
+
+.inp-5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 12px 20px 12px 20px;
+    border: none;
+    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    grid-area: inp-5;
+}
+
+
+.inpContainer {
+    width: 100%;
+    height: 10rem;
+    display: grid;
+    gap: .75rem;
+    margin-bottom: 2rem;
+    grid-template-areas:
+        "inp-1 inp-2"
+        "inp-3 inp-4"
+        "inp-5 inp-5"
+    ;
+}
+.btnCalc{
+    width: 14rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
 /* Meet our team */
+.teamSection{
+    margin-top: 5.5rem;
+}
 .teamTitle {
     font-size: 3rem;
     margin: 0;
@@ -397,6 +556,8 @@ hr {
         height: 12rem;
     }
 
+
+    /* team section */
     .teamContainer {
         grid-template-columns: repeat(1, 1fr);
         /* margin-right: .8rem; */
@@ -431,13 +592,13 @@ hr {
         flex-direction: column;
         align-items: flex-start;
         height: auto;
-        text-align:start;
+        text-align: start;
     }
 
     .footerContainer {
         display: flex;
         flex-direction: column;
-        align-items:flex-start;
+        align-items: flex-start;
         margin-top: 3rem;
         width: 100%;
         padding: 0 1rem;
