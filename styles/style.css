@@ -449,6 +449,20 @@ th {
 .position {
     color: rgba(255, 255, 255, 0.5);
 }
+/* Choose Program section */
+.programSection{
+    color: white;
+}
+.programContainer{
+    background-color: rgba(255, 255, 255, 0.05);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.programChild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* footer Section */
 .footer {
