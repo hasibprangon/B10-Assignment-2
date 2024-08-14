@@ -118,7 +118,7 @@ body {
 }
 
 .bannerContent {
-    max-width: 32.5rem;
+    width: 32.5rem;
 }
 
 .bannerTitle {
@@ -144,7 +144,46 @@ body {
     font-weight: 600;
     padding: 1rem 2.5rem 1rem 2.5rem;
 }
-
+.bannerImgAndCard{
+    position: relative;
+}
+.cardOnImg1{
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+    border-radius: .75rem;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-bottom: 60px;
+    margin-left: 630px;
+    bottom: 0;
+    left: 0;
+}
+.redCircle{
+    width: 30%;
+    height: 50%;
+    color: rgb(230, 83, 60);
+    background-color: rgb(230, 83, 60);
+    border: 1px solid rgb(230, 83, 60);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.cardOnImg2{
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+    border-radius: .75rem;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    margin-top: 7.5rem;
+    right: 0;
+    top: 0;
+}
 
 /* habit section */
 .habit {
@@ -237,6 +276,9 @@ body {
 }
 
 /* BMI section */
+.bmiSection{
+    width: 100%;
+}
 .bmi {
     margin: 5rem 20rem;
 }
@@ -319,66 +361,56 @@ th {
 }
 
 .inp-1 {
-    font-size: 1rem;
-    font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
-    padding: 12px 40px 12px 20px;
     grid-area: inp-1;
-    border: none;
-    border-radius: .5rem;
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .inp-2 {
-    font-size: 1rem;
-    font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
-    padding: 12px 40px 12px 20px;
     grid-area: inp-2;
-    border: none;
-    border-radius: .5rem;
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .inp-3 {
-    font-size: 1rem;
-    font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
-    padding: 12px 40px 12px 20px;
-    border: none;
-    border-radius: .5rem;
-    background-color: rgba(255, 255, 255, 0.1);
     grid-area: inp-3;
 }
 
 .inp-4 {
-    font-size: 1rem;
-    font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
-    padding: 12px 20px 12px 20px;
-    border: none;
-    border-radius: .5rem;
-    background-color: rgba(255, 255, 255, 0.1);
     grid-area: inp-4;
 }
 
 .inp-5 {
-    font-size: 1rem;
-    font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
-    padding: 12px 20px 12px 20px;
-    border: none;
-    border-radius: .5rem;
-    background-color: rgba(255, 255, 255, 0.1);
     grid-area: inp-5;
 }
 
+.inputChild {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 12px 40px 12px 40px;
+    border: none;
+    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
-.inpContainer {
+#inp-2 {
+    display: inline-block;
+}
+
+#activity,
+#sex {
+    width: 100%;
+}
+.inpContainer{
+    width: 100%;
+}
+
+.inpForm {
     width: 100%;
     height: 10rem;
     display: grid;
-    gap: .75rem;
     margin-bottom: 2rem;
     grid-template-areas:
         "inp-1 inp-2"
@@ -386,16 +418,18 @@ th {
         "inp-5 inp-5"
     ;
 }
-.btnCalc{
+
+.btnCalc {
     width: 14rem;
     font-size: 1.125rem;
     font-weight: 600;
 }
 
 /* Meet our team */
-.teamSection{
+.teamSection {
     margin-top: 5.5rem;
 }
+
 .teamTitle {
     font-size: 3rem;
     margin: 0;
@@ -431,7 +465,6 @@ th {
     width: 20.42rem;
     height: 17rem;
     border-radius: 1.125rem;
-    /* margin-left: 20px; */
 }
 
 .textOnImg {
@@ -449,18 +482,21 @@ th {
 .position {
     color: rgba(255, 255, 255, 0.5);
 }
+
 /* Choose Program section */
-.programSection{
+.programSection {
     margin-top: 5rem;
 }
-.programTitle{
+
+.programTitle {
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
     color: rgb(255, 255, 255);
     margin: 0;
 }
-.programDescription{
+
+.programDescription {
     width: 80%;
     margin: 0 auto;
     font-size: .875rem;
@@ -468,44 +504,52 @@ th {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
 }
-.programContainer{
+
+.programContainer {
     width: 100%;
     margin-top: 3rem;
     background-color: rgba(255, 255, 255, 0.05);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.programChilds{
+
+.programChilds {
     height: 10rem;
     display: flex;
     justify-content: center;
     margin: 1.25rem auto;
 }
-.child{
+
+.child {
     width: 30rem;
     margin-left: 3.125rem;
 }
-.childImg{
-width: 6.25rem;
-height: 6.25rem;
+
+.childImg {
+    width: 6.25rem;
+    height: 6.25rem;
 }
-.childHeading{
+
+.childHeading {
     margin: 0;
     font-size: 1.23rem;
     color: rgb(255, 255, 255);
 }
-.childDescription{
-margin-top: 5px;
-margin-bottom: 5px;
-font-size: .875rem;
-font-weight: 400;
-color: rgba(255, 255, 255, 0.5);
+
+.childDescription {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: .875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
 }
-.childAtag{
+
+.childAtag {
     text-decoration: none;
     margin: 0px;
     color: rgb(230, 83, 60);
 }
+
 /* footer Section */
 .footer {
     background-color: rgba(255, 255, 255, 0.1);
@@ -612,11 +656,87 @@ hr {
         height: 12rem;
     }
 
+    /* bmi section */
+
+    .bmiSection{
+        width: 100%;
+    }
+
+    .bmi {
+        margin: 2rem 1rem;
+    }
+
+    .bmiTitle {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .bmiDescription {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .bmiContent {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .chartContainer, .calcContainer {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .chartTitle, .bmiCalcTitle {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        height: auto;
+    }
+
+    th, td {
+        font-size: 0.75rem;
+        padding: 6px;
+    }
+    .inp-1, .inp-3{
+        width: 10rem;
+        margin-right: 1rem;
+    }
+    #inp-2{
+        width: 9rem;
+    }
+
+    .inpContainer{
+        width: 100%;
+    }
+
+    .inpForm {
+        width: 100%;
+        gap: 1rem;
+        grid-template-areas:
+            "inp-1 inp-2"
+            "inp-3 inp-4"
+            "inp-5 inp-5";
+    }
+
+    .inputChild {
+        padding: 10px 15px;
+        width: 100%;
+    }
+
+    .btnCalc {
+        width: 100%;
+        font-size: 1rem;
+    }
 
     /* team section */
     .teamContainer {
         grid-template-columns: repeat(1, 1fr);
-        /* margin-right: .8rem; */
         justify-content: center;
         align-items: center;
     }
@@ -636,13 +756,15 @@ hr {
     }
 
     /* program container */
-    .programContainer{
+    .programContainer {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
-    .child{
+
+    .child {
         width: 10rem;
     }
+
     /* footer section */
     .footer {
         background: rgba(255, 255, 255, 0.1);

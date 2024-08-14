@@ -30,7 +30,7 @@
                 </section>
             </nav>
             <!-- banner section -->
-            <section>
+            <section class="bannerImgAndCard">
                 <div class="bannerContainer">
                     <div class="bannerContent">
                         <h1 class="bannerTitle">Get body in <span class="playwrite-cu-font">shape</span> & stay healthy
@@ -42,9 +42,25 @@
                             <button class="download">Download App</button>
                         </div>
                     </div>
-                    <div class="bannerImgAndCard">
+                    <div>
                         <img src="./images/banner.png" alt="">
+
                     </div>
+                </div>
+                <div class="cardOnImg1">
+                    <div class="redCircle">
+                        <h1 style="margin: 0;">fit</h1>
+                    </div>
+                    <div>
+                        <h1 style="color: white; font-size: 1.5rem; font-weight: 900; margin: 0;">350+</h1>
+                        <p style="color: rgba(255, 255, 255, 0.65); font-size: 1rem; margin: 0;"><small>Video tutorial</small></p>
+                    </div>
+                </div>
+                <div class="cardOnImg2">
+                    <h1 style="color: white; font-size: 40px; margin: 0;">500+</h1>
+                    <p style=" margin: 0; font-size: .8125rem; color: rgba(255, 255, 255, 0.65);">
+                        <small>Free Workout Videos</small>
+                    </p>
                 </div>
             </section>
         </section>
@@ -94,7 +110,7 @@
         </section>
 
         <!-- BMI section -->
-        <section>
+        <section class="bmiSection">
             <div class="bmi">
                 <h1 class="bmiTitle">BMI Calculator</h1>
                 <p class="bmiDescription">
@@ -136,19 +152,33 @@
                     <p class="bmiCalcDescription">We believe fitness should be accessible to everyone, everywhere,
                         regardless of income or access
                         to a gym.</p>
-                    <form class="inpContainer">
-                        <input type="text" class="inp-1" value="Height/cm" placeholder="Height/cm">
-                        <input type="text" class="inp-2" value="Weight/kg" placeholder="Weight/kg">
-                        <input type="text" class="inp-3" value="Age" placeholder="Age">
-                        <select class="inp-4" name="sex">
-                            <option value="" disabled selected>Sex</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                        <select id="activity" name="activity" class="inp-5">
-                            <option value="" disabled selected>Select an activity factor</option>
-                        </select>
-                    </form>
+                    <div class="inpContainer">
+                        <form class="inpForm">
+                            <div class="inp-1">
+                                <input type="text" class="inputChild" id="inp-1" value="Height/cm"
+                                    placeholder="Height/cm">
+                            </div>
+                            <div class="inp-2">
+                                <input type="text" class="inputChild" id="inp-2" value="Weight/kg"
+                                    placeholder="Weight/kg">
+                            </div>
+                            <div class="inp-3">
+                                <input type="text" class="inputChild" id="inp-3" value="Age" placeholder="Age">
+                            </div>
+                            <div class="inp-4">
+                                <select class="inputChild" id="sex" name="sex">
+                                    <option value="" disabled selected>Sex</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <div class="inp-5">
+                                <select class="inputChild" id="activity" name="activity">
+                                    <option value="" disabled selected>Select an activity factor</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
                     <button class="btnPrimary btnCalc">Calculate</button>
                 </div>
             </div>
@@ -209,14 +239,17 @@
         <!-- Choose Program section -->
         <section class="programSection">
             <h1 class="programTitle">Choose Program</h1>
-            <p class="programDescription">Explore a variety of fitness programs tailored to meet your unique goals, whether you're a beginner or advanced athlete. Choose the perfect plan that fits your lifestyle, helping you achieve strength, flexibility, and overall wellness.</p>
+            <p class="programDescription">Explore a variety of fitness programs tailored to meet your unique goals,
+                whether you're a beginner or advanced athlete. Choose the perfect plan that fits your lifestyle, helping
+                you achieve strength, flexibility, and overall wellness.</p>
 
             <div class="programContainer">
                 <div class="programChilds">
                     <img class="childImg" src="./images/dumble.png" alt="">
                     <div class="child">
                         <h3 class="childHeading">Basic Fitness</h3>
-                        <p class="childDescription">Start your journey to a healthier lifestyle with foundational fitness exercises and routines.</p>
+                        <p class="childDescription">Start your journey to a healthier lifestyle with foundational
+                            fitness exercises and routines.</p>
                         <a class="childAtag" href="">Learn More</a>
                     </div>
                 </div>
@@ -224,7 +257,8 @@
                     <img class="childImg" src="./images/dumble.png" alt="">
                     <div class="child">
                         <h3 class="childHeading">Advanced Muscle Course</h3>
-                        <p class="childDescription">Enhance muscle strength and definition with our comprehensive, expert-led advanced muscle training program.</p>
+                        <p class="childDescription">Enhance muscle strength and definition with our comprehensive,
+                            expert-led advanced muscle training program.</p>
                         <a class="childAtag" href="">Learn More</a>
                     </div>
                 </div>
@@ -232,7 +266,8 @@
                     <img class="childImg" src="./images/dumble.png" alt="">
                     <div class="child">
                         <h3 class="childHeading">New Gym Training</h3>
-                        <p class="childDescription">Discover the latest gym techniques and equipment to maximize your workout efficiency and results.</p>
+                        <p class="childDescription">Discover the latest gym techniques and equipment to maximize your
+                            workout efficiency and results.</p>
                         <a class="childAtag" href="">Learn More</a>
                     </div>
                 </div>
@@ -240,7 +275,8 @@
                     <img class="childImg" src="./images/dumble.png" alt="">
                     <div class="child">
                         <h3 class="childHeading">Yoga Training</h3>
-                        <p class="childDescription">Achieve physical and mental balance through our structured, beginner-friendly and advanced yoga sessions.</p>
+                        <p class="childDescription">Achieve physical and mental balance through our structured,
+                            beginner-friendly and advanced yoga sessions.</p>
                         <a class="childAtag" href="">Learn More</a>
                     </div>
                 </div>
@@ -248,7 +284,8 @@
                     <img class="childImg" src="./images/dumble.png" alt="">
                     <div class="child">
                         <h3 class="childHeading">Basic Muscle Course</h3>
-                        <p class="childDescription">Build a strong foundation with essential muscle-building exercises for beginners and intermediate athletes.</p>
+                        <p class="childDescription">Build a strong foundation with essential muscle-building exercises
+                            for beginners and intermediate athletes.</p>
                         <a class="childAtag" href="">Learn More</a>
                     </div>
                 </div>
@@ -256,7 +293,8 @@
                     <img class="childImg" src="./images/dumble.png" alt="">
                     <div class="child">
                         <h3 class="childHeading">Body Building Course</h3>
-                        <p class="childDescription">Sculpt your physique with targeted bodybuilding workouts designed for serious muscle growth and endurance.</p>
+                        <p class="childDescription">Sculpt your physique with targeted bodybuilding workouts designed
+                            for serious muscle growth and endurance.</p>
                         <a class="childAtag" href="">Learn More</a>
                     </div>
                 </div>
@@ -295,8 +333,6 @@
             <hr>
             <p class="rights footerContentColor">All rights reserved &#64;Fitness 2024</p>
         </section>
-        <!-- <hr>
-        <p class="rights footerContentColor">All rights reserved &#64;Fitness 2024</p> -->
     </footer>
 
 </body>
