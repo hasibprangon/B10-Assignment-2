@@ -9,13 +9,17 @@
         "slnt" 0;
 }
 
+/* @import url('https://fonts.cdnfonts.com/css/miama');
+.miama-font{
+font-family: 'Miama', sans-serif;} */
 /* banner title font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playwrite+BE+VLG&family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
 
-.playwrite-cu-font {
-    font-family: "Playwrite CU", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
+.miama-font {
+    font-family: 'Miama', sans-serif;
+        /* font-size: 4.875rem;                                         */
+    /* font-optical-sizing: auto;
+    font-style: normal; */
 }
 
 body {
@@ -144,10 +148,12 @@ body {
     font-weight: 600;
     padding: 1rem 2.5rem 1rem 2.5rem;
 }
-.bannerImgAndCard{
+
+.bannerImgAndCard {
     position: relative;
 }
-.cardOnImg1{
+
+.cardOnImg1 {
     width: 10rem;
     height: 5rem;
     text-align: center;
@@ -163,16 +169,22 @@ body {
     bottom: 0;
     left: 0;
 }
-.redCircle{
+
+.redCircle {
     width: 30%;
     height: 50%;
-    color: rgb(230, 83, 60);
+    color: white;
+    /* margin: 0 auto; */
     background-color: rgb(230, 83, 60);
     border: 1px solid rgb(230, 83, 60);
     border-radius: 50%;
     margin-right: 1rem;
 }
-.cardOnImg2{
+.fa-solid{
+    margin: 12px;
+}
+
+.cardOnImg2 {
     width: 10rem;
     height: 5rem;
     text-align: center;
@@ -276,9 +288,10 @@ body {
 }
 
 /* BMI section */
-.bmiSection{
+.bmiSection {
     width: 100%;
 }
+
 .bmi {
     margin: 5rem 20rem;
 }
@@ -403,7 +416,8 @@ th {
 #sex {
     width: 100%;
 }
-.inpContainer{
+
+.inpContainer {
     width: 100%;
 }
 
@@ -612,8 +626,17 @@ hr {
 
 /* mobile device responsive style */
 @media screen and (max-width:576px) {
+    .bannerContent{
+        /* margin-left: 5rem; */
+        width: 98%;
+    }
     .bannerTitle {
+        /* width: 80%; */
+        /* margin-left: 2rem; */
         font-size: 2.25rem;
+    }
+    .bannerDescription{
+        width: 90%;
     }
 
     .navLinks {
@@ -626,6 +649,22 @@ hr {
 
     .bannerContainer {
         flex-direction: column;
+    }
+
+    .cardOnImg1 {
+        width: 9rem;
+        height: 4.5rem;
+        margin-bottom: 16.5625rem;
+        margin-left: 10px;
+    }
+
+    .cardOnImg2{
+        width: 9rem;
+        height: 4.5rem; 
+        margin-top: 27rem;
+    }
+    .fa-solid{
+        margin: 9px;
     }
 
     .navBtn {
@@ -658,7 +697,7 @@ hr {
 
     /* bmi section */
 
-    .bmiSection{
+    .bmiSection {
         width: 100%;
     }
 
@@ -683,13 +722,15 @@ hr {
         height: auto;
     }
 
-    .chartContainer, .calcContainer {
+    .chartContainer,
+    .calcContainer {
         width: 100%;
         height: auto;
         margin-bottom: 2rem;
     }
 
-    .chartTitle, .bmiCalcTitle {
+    .chartTitle,
+    .bmiCalcTitle {
         font-size: 1.5rem;
         text-align: center;
     }
@@ -699,19 +740,23 @@ hr {
         height: auto;
     }
 
-    th, td {
+    th,
+    td {
         font-size: 0.75rem;
         padding: 6px;
     }
-    .inp-1, .inp-3{
+
+    .inp-1,
+    .inp-3 {
         width: 10rem;
         margin-right: 1rem;
     }
-    #inp-2{
+
+    #inp-2 {
         width: 9rem;
     }
 
-    .inpContainer{
+    .inpContainer {
         width: 100%;
     }
 
