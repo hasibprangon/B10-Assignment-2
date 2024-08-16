@@ -9,12 +9,10 @@
         "slnt" 0;
 }
 
-
-@import url('https://fonts.cdnfonts.com/css/miama');
-
 .miama-font {
     font-family: 'Miama', sans-serif;
 }
+
 
 body {
     background-color: rgb(0, 0, 0);
@@ -119,7 +117,7 @@ body {
     width: 32.5rem;
 }
 
-.bannerTitle {
+.bannerTitle, .miama {
     color: rgb(255, 255, 255);
     font-size: 4.875rem;
     font-weight: 900;
@@ -618,6 +616,9 @@ hr {
 
 /* mobile device responsive style */
 @media screen and (max-width:576px) {
+    .miama{
+        font-size: 2.25rem;
+    }
     .bannerContent{
         width: 98%;
     }
@@ -707,21 +708,20 @@ hr {
     .bmiContent {
         flex-direction: column;
         align-items: flex-start;
-        padding: 1rem;
         height: auto;
     }
 
     .chartContainer,
     .calcContainer {
-        width: 100%;
+        width: 90%;
         height: auto;
         margin-bottom: 2rem;
     }
 
     .chartTitle,
     .bmiCalcTitle {
-        font-size: 1.5rem;
-        text-align: center;
+        font-size: 1rem;
+        text-align: start;
     }
 
     table {
@@ -764,7 +764,7 @@ hr {
     }
 
     .btnCalc {
-        width: 100%;
+        width: 14rem;
         font-size: 1rem;
     }
 
